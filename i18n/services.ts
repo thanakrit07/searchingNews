@@ -5,6 +5,11 @@ import { initReactI18next } from 'react-i18next';
 
 export type TI18nLanguage = 'en-US' | 'zh-CN';
 
+export const languageMapping = {
+  'en-US': 'en',
+  'zh-CN': 'zh',
+} as Record<TI18nLanguage, string>;
+
 function initI18n(
   loadPath: string,
   defaultLanguage: string,
